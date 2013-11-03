@@ -1,20 +1,3 @@
 body, td, a, p {
     font: 13px/27px Arial, sans-serif;
 }
-
-#app-menu {
-    background-color: #ececec;
-    background-image: none;
-    color: #bbb;
-    height: 24px;
-    font-weight: bold;
-    list-style: none;
-    line-height: 21px;
-    padding: 0 9px;
-    position: relative;
-}
-
-.item {
-    display: inline-block;
-    width: 50px;
-}

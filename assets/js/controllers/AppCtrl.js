@@ -24,12 +24,7 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
          * automatically if url matches
          */
         hello: function() {
-            console.log('hello world!');
-        },
-
-        helloInChinese: function() {
-            //you can invoke any method in this controller (including the private methods for sure)
-            this._privateMethod();
+           this._privateMethod();
         },
 
         /**
@@ -37,7 +32,7 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
          * this method
          */
         _privateMethod: function() {
-            console.log('你好世界!');
+            alert('You just use view to shoot a target and trigger the action of controller.');
         }
     });
     return AppCtrl;
