@@ -4,9 +4,9 @@
  * @return {object}
  */
 
-define(['backbone', 'handlebars', 'templates/kicks', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function(Backbone, Handlebars) {
+define(['backbone', 'handlebars.manager', 'css!styles/unsemantic-grid-responsive.css', 'css!styles/app.css'], function(Backbone, Templates) {
     var AppView = Backbone.View.extend({
-        template: Handlebars.templates.kicks,
+        template: Templates.kicks,
         render: function() {
             this.$el.html(this.template(this.model.attributes));
             return this;
