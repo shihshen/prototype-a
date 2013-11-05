@@ -3,4 +3,4 @@ npm-*.log
 tmp
 .tmp
 .DS_Store
-assets/templates/*.js
+www
