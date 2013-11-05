@@ -1,5 +1,5 @@
-# kicks
-### Sails + require.js + jQuery + backbone + backboneMVC + handlebars = MVC on server side and client side.
+# Kicks.js
+### Sails.js + require.js + jQuery + backbone + backboneMVC + handlebars = MVC on server side and client side.
 
 Usage:
 * npm i
