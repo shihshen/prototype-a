@@ -13,9 +13,6 @@ requirejs.config({
         'backbone': 'js/lib/backbone-min',
         'backbone-mvc': 'js/lib/backbone-mvc',
         'handlebars': 'js/lib/handlebars.runtime',
-        // handlebars.manager will load compiled.handlebars which is all compiled handlebars.
-        // Please consider to use text plugin if there are too many handlebars templates.
-        'handlebars.manager': 'js/lib/handlebars.manager',
 
         // Plugins
         'text': 'js/lib/text',
@@ -36,13 +33,8 @@ requirejs.config({
             deps: ['backbone'],
             exports: 'BackboneMVC'
         },
-        // DO NOT exports Handlebars due to compiled.handlebars requires Handlebars to be global.
-        //'handlebars': {
-        //    exports: 'Handlebars'
-        //},
-        'templates/compiled.handlebars': {
-            deps: ['handlebars'],
-            exports: 'CompiledHandlebars'
+        'handlebars': {
+            exports: 'Handlebars'
         }
     }
 });

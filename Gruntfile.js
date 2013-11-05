@@ -140,12 +140,25 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // handlebars:compile will compile all handlebars templates into one javascript file.
     handlebars: {
       compile: {
-        files: {
-          '.tmp/public/templates/compiled.handlebars.js': '.tmp/public/templates/*.handlebars'
-        }
+        options: {
+          amd: true,
+          processName: function(filePath) {
+            var subFilePath = filePath.substring(0, filePath.lastIndexOf('.handlebars'));
+            var parts = subFilePath.split('/');
+            return parts[parts.length - 1];
+          }
+        },
+        files: [
+          {
+            expand: true,
+            cwd: '.tmp/public/templates/',
+            src: ['**/*.handlebars'],
+            dest: '.tmp/public/templates/',
+            ext: '.js'
+          }
+        ]
       }
     },
 

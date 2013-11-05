@@ -3,9 +3,4 @@
 
 Usage:
 * npm i
-* compile all hanldbars under assets/templates/
 * node app.js
-
-TODOs:
-* Auto precompile handlebars templates while starting application.
-* Minify assets while starting application with production mode.
