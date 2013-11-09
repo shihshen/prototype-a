@@ -19,11 +19,11 @@ requirejs.config({
         'css': 'js/lib/css'
     },
     shim: {
-        'underscore': {
-            exports: '_'
-        },
         'jquery': {
             exports: '$'
+        },
+        'underscore': {
+            exports: '_'
         },
         'backbone': {
             deps: ['underscore', 'jquery'],
