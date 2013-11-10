@@ -2,7 +2,7 @@
     "name": "kicks",
     "private": true,
     "version": "0.0.0",
-    "description": "Sails.js + require.js + jQuery + backbone + backboneMVC + handlebars",
+    "description": "A Kicks application",
     "dependencies": {
         "sails": "0.9.7",
         "grunt": "0.4.1",
