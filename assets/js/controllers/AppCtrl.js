@@ -10,13 +10,18 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
         name: 'AppCtrl',
         /* the only mandatory field */
 
+        // model and view below are M and V in MVC.
+        model: null,
+        view: null,
+
         initialize: function() {
-            var appModel = new AppModel({html: 'Hello kicks'});
-            var appView = new AppView({
-                model: appModel,
+            var self = this;
+            self.model = new AppModel({html: 'Hello kicks'});
+            self.view = new AppView({
+                model: self.model.toJSON(),
                 el: $('#kicks')
             });
-            appView.render();
+            self.view.render();
         },
 
         /**

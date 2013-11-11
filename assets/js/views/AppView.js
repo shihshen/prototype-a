@@ -8,7 +8,7 @@ define(['backbone', 'templates/kicks', 'css!styles/unsemantic-grid-responsive.cs
     var AppView = Backbone.View.extend({
         template: Templates.kicks,
         render: function() {
-            this.$el.html(this.template(this.model.attributes));
+            this.$el.html(this.template(this.model));
             return this;
         }
     });
