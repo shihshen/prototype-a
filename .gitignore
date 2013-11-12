@@ -4,3 +4,4 @@ tmp
 .tmp
 .DS_Store
 www
+config/local.js
