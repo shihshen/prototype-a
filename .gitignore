@@ -1,7 +1,45 @@
-node_modules
-npm-*.log
-tmp
+########################
+# sails
+########################
+.sails
+.waterline
+.rigging
 .tmp
-.DS_Store
-www
+
+
+########################
+# node.js / npm
+########################
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+
+npm-debug.log
+
+
+########################
+# misc / editors
+########################
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+
+
+########################
+# local config
+########################
 config/local.js
