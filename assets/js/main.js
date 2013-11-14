@@ -15,7 +15,6 @@ requirejs.config({
         'handlebars': 'js/lib/handlebars.runtime',
 
         // Plugins
-        'text': 'js/lib/text',
         'css': 'js/lib/css'
     },
     shim: {
