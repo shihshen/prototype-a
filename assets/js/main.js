@@ -38,7 +38,7 @@ requirejs.config({
     }
 });
 
-require(['backbone', 'backbone-mvc', 'js/controllers/AppCtrl'], function(Backbone, BackboneMVC, AppCtrl) {
+require(['backbone', 'backbone-mvc', 'css!styles/unsemantic-grid-responsive.css', 'js/controllers/AppCtrl'], function(Backbone, BackboneMVC, __grid,  AppCtrl) {
     $(document).ready(function() {
         // Start the new automatic router and Backbone.history.
         var router = new BackboneMVC.Router();
