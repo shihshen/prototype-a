@@ -141,7 +141,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     handlebars: {
-      compile: {
+      dev: {
         options: {
           amd: true,
           processName: function(filePath) {
@@ -153,9 +153,15 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd: '.tmp/public/templates/',
+            cwd: 'assets/templates/',
             src: ['**/*.handlebars'],
             dest: '.tmp/public/templates/',
+            ext: '.js'
+          }, {
+            expand: true,
+            cwd: 'assets/linker/templates/',
+            src: ['**/*.handlebars'],
+            dest: '.tmp/public/linker/templates/',
             ext: '.js'
           }
         ]
@@ -447,8 +453,8 @@ module.exports = function (grunt) {
     'clean:dev',
     'jst:dev',
     'less:dev',
+    'handlebars:dev',
     'copy:dev',
-    'handlebars:compile',
     'coffee:dev'
   ]);
 
@@ -478,8 +484,8 @@ module.exports = function (grunt) {
     'clean:dev',
     'jst:dev',
     'less:dev',
+    'handlebars:dev',
     'copy:dev',
-    'handlebars:compile',
     'coffee:dev',
     'concat',
     'uglify',
