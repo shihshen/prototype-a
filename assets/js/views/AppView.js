@@ -8,7 +8,7 @@ define(['backbone', 'templates/kicks'], function(Backbone, Templates) {
     var AppView = Backbone.View.extend({
         template: Templates.kicks,
         render: function() {
-            this.$el.html(this.template(this.model));
+            this.$el.html(this.template({data: this.model}));
             return this;
         }
     });
