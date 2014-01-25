@@ -16,7 +16,9 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
 
         initialize: function() {
             var self = this;
-            self.model = new AppModel({html: 'Hello kicks'});
+            self.model = new AppModel({
+                html: 'Hello kicks'
+            });
             self.view = new AppView({
                 model: self.model,
                 el: $('#kicks')
@@ -29,7 +31,7 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
          * automatically if url matches
          */
         hello: function() {
-           this._privateMethod();
+            this._privateMethod();
         },
 
         /**
