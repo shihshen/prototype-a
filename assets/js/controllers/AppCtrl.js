@@ -18,7 +18,7 @@ define(['backbone-mvc', 'js/models/AppModel', 'js/views/AppView'], function(Back
             var self = this;
             self.model = new AppModel({html: 'Hello kicks'});
             self.view = new AppView({
-                model: self.model.toJSON(),
+                model: self.model,
                 el: $('#kicks')
             });
             self.view.render();
