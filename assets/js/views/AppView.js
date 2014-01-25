@@ -9,7 +9,7 @@ define(['backbone', 'templates/kicks'], function(Backbone, Templates) {
         template: Templates.kicks,
         render: function() {
             this.$el.html(this.template({
-                data: this.model.attributes
+                data: this.model.toJSON()
             }));
             return this;
         }
