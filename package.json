@@ -1,8 +1,8 @@
 {
-    "name": "kicks",
+    "name": "prototype",
     "private": true,
     "version": "0.0.0",
-    "description": "A Kicks application",
+    "description": "A prototype",
     "dependencies": {
         "sails": "0.9.4",
         "grunt": "0.4.1",
