@@ -1,5 +1,5 @@
 # Prototype
-### Sails.js + require.js + jQuery + client side MVC framework.
+### Sails.js + require.js + jQuery + backbone + backboneMVC + handlebars
 
 Note:
 * Please DO NOT fork this repo, just "cp -rf prototype/* dest/ && cp prototype/.gitignore dest/".
