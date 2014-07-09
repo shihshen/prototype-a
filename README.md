@@ -2,6 +2,6 @@
 ### Sails.js + require.js + jQuery + backbone + backboneMVC + handlebars
 
 Note:
-* Please DO NOT fork this repo, just "cp -rf prototype-A/* dest/ && cp prototype-A/.gitignore dest/".
+* Just "cp -rf prototype-a/* dest/ && cp prototype-a/.gitignore dest/".
 * npm i
 * node app.js
