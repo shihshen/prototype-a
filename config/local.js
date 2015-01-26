@@ -36,9 +36,9 @@ module.exports = {
   // In production, you'll probably want to change this setting 
   // to 80 (http://) or 443 (https://) if you have an SSL certificate
 
-  port: process.env.OPENSHIFT_NODEJS_PORT || 1337,
+  port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 1337,
 
-  host: process.env.OPENSHIFT_NODEJS_IP || 'localhost',
+  host: process.env.OPENSHIFT_NODEJS_IP,
 
   // The runtime "environment" of your Sails app is either 'development' or 'production'.
   //
@@ -52,6 +52,6 @@ module.exports = {
   // By default, Sails sets its environment using the `NODE_ENV` environment variable.
   // If NODE_ENV is not set, Sails will run in the 'development' environment.
 
-  environment: 'production',
+  environment: process.env.NODE_ENV || 'development',
 
 };
